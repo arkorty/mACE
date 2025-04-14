@@ -9,7 +9,7 @@
 A Python-based toolkit for advanced stock market analysis and prediction, leveraging machine learning models and technical indicators.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/arkorty/mACE/main/images/mACE_logo.png" alt="mACE Logo" width="400">
+  <img src="https://github.com/arkorty/mACE/blob/master/blob/mACE_logo.png?raw=true" alt="mACE Logo" width="400">
 </p>
 
 ## ✨ Key Features
@@ -29,27 +29,20 @@ A Python-based toolkit for advanced stock market analysis and prediction, levera
 
 1. Clone the repository:
 
-
 ```bash
    git clone https://github.com/arkorty/mACE.git
    cd mACE
-   
+
 
 ```
 
 2. Install dependencies:
-
-   
-
-
 
 ```bash
 pip install -r requirements.txt
 ```
 
 ## 📂 Directory Structure
-
-
 
 ```
 mACE/
@@ -71,7 +64,7 @@ mACE/
 
 ### 1. Data Preparation
 
-Ensure your stock data is in CSV format and placed in the 
+Ensure your stock data is in CSV format and placed in the
 
 `stockdata/` directory. The CSV files should have the following columns: `Date`, `Open`, `High`, `Low`, `Close`, `Volume`.
 
@@ -116,21 +109,19 @@ def moving_average_crossover(data, short_window, long_window):
 
 - For basic LSTM:
 
-  
-
 ```bash
 python src/model/lstm.py
 
 
 ```
 
-  This script will:
+This script will:
 
-  - Load stock data.
-  - Preprocess data (e.g., scaling).
-  - Build and train a basic LSTM model.
-  - Evaluate the model's performance.
-  - Generate prediction plots in the `predictions/` directory.
+- Load stock data.
+- Preprocess data (e.g., scaling).
+- Build and train a basic LSTM model.
+- Evaluate the model's performance.
+- Generate prediction plots in the `predictions/` directory.
 
 ```python
 # Example Snippet from lstm.py
@@ -154,21 +145,19 @@ def build_lstm_model(input_shape):
 
 - For advanced LSTM/GRU with attention:
 
-  
-
 ```bash
 python src/model/lstm2.py
 
 
 ```
 
-  This script will:
+This script will:
 
-  - Load stock data.
-  - Preprocess data.
-  - Build and train an advanced LSTM/GRU model with attention mechanisms.
-  - Evaluate the model's performance.
-  - Generate prediction plots and feature importance analysis in the respective directories.
+- Load stock data.
+- Preprocess data.
+- Build and train an advanced LSTM/GRU model with attention mechanisms.
+- Evaluate the model's performance.
+- Generate prediction plots and feature importance analysis in the respective directories.
 
 ```python
 # Example Snippet from lstm2.py
@@ -200,29 +189,31 @@ class Attention(Layer):
 
 Example outputs (plots and metrics) are automatically saved to the `predictions/` and `analysis/` directories upon script execution. These outputs provide insights into model predictions, feature importance, and strategy performance.
 
-*Ensure these directories are populated with relevant files after running the scripts.*
+_Ensure these directories are populated with relevant files after running the scripts._
 
 ## 🛠️ Customization
 
 You can customize various parameters in the scripts to tailor the analysis to your specific needs:
 
-- **Sequence length, batch size, and epochs:**  Adjust training parameters in the LSTM scripts.
+- **Sequence length, batch size, and epochs:** Adjust training parameters in the LSTM scripts.
 - **Technical indicators and scaling methods:** Modify the technical indicators used in the analysis and the scaling techniques applied to the data.
-- **Moving average windows for MACS:**  Experiment with different moving average windows for the Moving Average Crossover Strategy.
+- **Moving average windows for MACS:** Experiment with different moving average windows for the Moving Average Crossover Strategy.
 
 ## 🧪 Testing
 
 To run the tests, execute the following command:
+
 ```bash
 pytest
 
 
 ```
-*Note: This project may require a `tests/` folder and `pytest` setup. Ensure appropriate tests are implemented to validate the functionalities of the scripts.*
+
+_Note: This project may require a `tests/` folder and `pytest` setup. Ensure appropriate tests are implemented to validate the functionalities of the scripts._
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to submit issues or pull requests to improve the project.  Please follow these guidelines:
+Contributions are welcome! Feel free to submit issues or pull requests to improve the project. Please follow these guidelines:
 
 1.  Fork the repository.
 2.  Create a new branch for your feature or bug fix.
@@ -238,4 +229,7 @@ This project is licensed under the [MIT License](LICENSE). See the `LICENSE` fil
 - The TensorFlow and Keras libraries for providing the deep learning framework.
 - The Pandas and NumPy libraries for data manipulation and analysis.
 - The Matplotlib and Seaborn libraries for data visualization.
+
+```
+
 ```
