@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/arkorty/mACE)
 [![Version](https://img.shields.io/github/v/release/arkorty/mACE)](https://github.com/arkorty/mACE/releases)
-[![License](https://img.shields.io/github/license/arkorty/mACE)](https://github.com/arkorty/mACE/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/arkorty/mACE)](https://github.com/arkorty/mACE/blob/master/LICENSE)
 [![Language](https://img.shields.io/github/languages/top/arkorty/mACE)](https://github.com/arkorty/mACE)
 [![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)](https://github.com/arkorty/mACE/network/dependencies)
 
